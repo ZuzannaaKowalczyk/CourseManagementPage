@@ -1,0 +1,72 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lecturer Page</title>
+    <script src="CoursePageScript.js" defer></script>
+    <link rel="stylesheet" href="css/StyleLecturerPage.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+
+<body onload="loadCourses()">
+
+    <div class="navigation">
+        <a href="MainPage.html">&lt;</a>
+        <h2>Zarządzanie kursami</h2>
+    </div>
+
+    <div class="container">
+
+        <div class="addSection">
+            <h3>Dodaj kurs</h3>
+            <form id="addCourseForm">
+                <label for="courseName">Podaj nazwę kursu:</label>
+                <input type="text" id="courseName" name="courseName" required />
+                <label for="courseDateTime" style="margin-left: 20px;">Wybierz termin i godzinę:</label>
+                <input type="datetime-local" id="courseDateTime" name="courseDateTime" required />
+                <button type="submit" style="margin-left: 20px;">Dodaj</button>
+            </form>
+            <div id="addMessage"></div>
+        </div>
+
+        <div class="modifySection">
+            <h3>Modyfikuj kurs</h3>
+            <form id="editCourseForm">
+                <label for="courseDropdown">Wybierz kurs:</label>
+                <select id="courseDropdown" required>
+                    <option value="">-- Wybierz kurs --</option>
+                </select><br />
+
+                <label for="editCourseName">Nowa nazwa kursu:</label>
+                <input type="text" id="editCourseName" required /><br />
+
+                <label for="editCourseDateTime">Nowa data kursu:</label>
+                <input type="datetime-local" id="editCourseDateTime" required /><br />
+
+                <button type="submit" style="margin-top: 10px;">Zapisz zmiany</button>
+            </form>
+            <div id="editMessage" style="margin:20px 0px 0px 0px;"></div>
+        </div>
+
+        <div class="deleteSection">
+            <h3>Usuń kurs</h3>
+            <form id="deleteCourseForm">
+                <label for="deleteCourseDropdown">Wybierz kurs do usunięcia:</label>
+                <select id="deleteCourseDropdown">
+                    <option value="">-- Wybierz kurs --</option>
+                </select>
+
+                <button type="submit" style="margin-left: 20px;">Usuń</button>
+            </form>
+            <div id="deleteMessage"></div>
+        </div>
+
+    </div>
+
+
+
+</body>
+</html>

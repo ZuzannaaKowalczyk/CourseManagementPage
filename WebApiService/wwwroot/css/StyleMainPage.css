@@ -1,0 +1,91 @@
+﻿body {
+    margin: 0;
+    font-family: "Work Sans", serif;
+}
+
+.container {
+    display: flex;
+    margin-top: 10px;
+}
+
+.leftSection, .rightSection {
+    flex: 1;
+    padding: 20px 0px 20px 0px;
+    overflow-y: auto;
+    margin: 40px;
+}
+
+.leftSection {
+    background-color: #007BFF;
+    margin: 10px 0px 20px 80px;
+    border-radius: 15px 0px 0px 15px;
+    padding-bottom: 60px;
+}
+
+.rightSection {
+    background-color: white;
+    border: 4px solid #007BFF;
+    margin: 10px 80px 20px 0px;
+    border-radius: 0px 15px 15px 0px;
+    padding-bottom: 60px;
+}
+
+h3 {
+    margin-top: 5px;
+    margin-bottom: 25px;
+    text-align: center;
+    color: black;
+    font-weight: 500;
+}
+
+
+.nav-buttons {
+    position: relative;
+    text-align: right;
+    margin: 25px 80px 20px 10px;
+}
+
+.nav-buttons a {
+    padding: 10px 16px;
+    margin-left: 10px;
+    text-decoration: none;
+    background-color: #007BFF;
+    color: white;
+    border-radius: 15px;
+    font-size: 14px;
+    
+}
+
+.nav-buttons a:hover {
+    background-color: #0056b3;
+}
+
+#courseList {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#courseList li {
+    background-color: white;
+    border-radius: 15px;
+    padding: 5px 20px;
+    margin-bottom: 10px;
+    text-align: center;
+    width: 80%;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    color:black;
+}
+
+#courseList li:hover {
+    background-color: #71BEF6;
+    color: white;
+}
+
+#selectedCourseName {
+    color: #007BFF;
+  font-weight: bold;
+}
