@@ -194,6 +194,14 @@ publish/
 # in these scripts will be unencrypted
 PublishScripts/
 
+# Configuration Files
+appsettings.json
+!appsettings.example.json
+secrets.json
+
+# Entity Framework Migrations
+Migrations/
+
 # NuGet Packages
 *.nupkg
 # NuGet Symbol Packages
