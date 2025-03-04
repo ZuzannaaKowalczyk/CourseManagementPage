@@ -1,0 +1,89 @@
+﻿body {
+    margin: 0;
+    font-family: "Work Sans", serif;
+}
+
+.navigation {
+    display: flex;
+    text-align: left;
+    margin: 25px 10px 20px 80px;
+    gap: 10px;
+}
+
+.navigation a {
+    padding: 10px 14px;
+    margin-top: 2px;
+    text-decoration: none;
+    background-color: #007BFF;
+    color: white;
+    border-radius: 50px;
+    font-size: 14px;
+}
+
+.container {
+    margin: 25px 80px 80px 80px;
+    padding: 30px 20px 40px 30px;
+    background-color: #007BFF;
+    border-radius: 15px;
+    display: flex;
+    flex-direction:column;
+}
+
+.saveSection, .displaySection, .cancelSection {
+    flex: 1;
+    background-color: white;
+    margin: 20px;
+    padding: 10px 20px 15px 20px;
+    border-radius: 15px;
+}
+
+button {
+    padding: 10px 16px;
+    text-decoration: none;
+    background-color: #007BFF;
+    color: white;
+    border-radius: 15px;
+    font-size: 14px;
+    border: none;
+}
+
+#userCoursesList {
+    list-style: none;
+}
+
+#userCoursesList li {
+    margin-bottom:5px;
+}
+.displaySection {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+.displaySection .left {
+    flex: 1;
+    margin-right: 20px;
+    border-radius: 10px;
+}
+
+.displaySection .right {
+    flex: 1;
+    margin-left: 20px;
+    border-radius: 10px;
+}
+
+input {
+    margin-bottom: 5px;
+    margin-top: 5px;
+}
+
+select {
+    margin-bottom: 5px;
+    margin-top: 5px;
+}
+
+.navigation h2 {
+    padding: 5px;
+    margin: 0;
+    font-size: 24px;
+    font-weight: bold;
+}

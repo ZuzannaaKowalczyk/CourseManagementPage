@@ -1,0 +1,38 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Main Page</title>
+    <script src="MainPageScript.js" defer></script>
+    <link rel="stylesheet" href="css/StyleMainPage.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <div class="nav-buttons">
+        <a href="StudentPage.html">Moje kursy</a>
+        <a href="LecturerPage.html">Zarządzanie kursami</a>
+    </div>
+
+    <div class="container">
+
+        <div class="leftSection">
+            <h3 style="color:white;">Dostępne kursy</h3>
+            <ul id="courseList"></ul>
+        </div>
+
+        <div class="rightSection">
+            <h3>Lista zapisanych na kurs: <br /><span id="selectedCourseName" >brak</span></h3>
+            <ol type="1" id="studentList"></ol>
+        </div>
+
+    </div>
+
+
+
+</body>
+</html>
